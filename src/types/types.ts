@@ -16,6 +16,7 @@ export type ProjectType = {
     }>;
     style: string;
   }>;
+  image?: { asset: { url: string } }
   images?: Array<{
     url: string;
     kind: "type" | "image" | "assemblage";
@@ -23,11 +24,13 @@ export type ProjectType = {
       title: string;
       categories?: Record<string, string | undefined>;
       properties?: Record<string, string | undefined>;
+      image?: { asset: { url: string } }
     };
     assemblageContent?: {
       title: string;
       categories?: Record<string, string | undefined>;
       properties?: Record<string, string | undefined>;
+      image?: { asset: { url: string } }
     };
   }>;
   categories?: Record<string, string | undefined>;

@@ -64,6 +64,13 @@ td {
   all: unset;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary) !important;
+  width: 20px !important;
+  height: 30px !important;
+}
+
 .tag {
   background: var(--primary);
   padding: var(--space-S);
@@ -162,7 +169,7 @@ td {
 
 .project__overlay {
   width: 800px;
-  height: 800px;
+  height: 820px;
   background: var(--background);
   backdrop-filter: blur(5px);
   border: var(--border-M);
@@ -170,8 +177,22 @@ td {
   position: relative;
 }
 
+.project__images {
+  height: 420px;
+  padding: var(--space-S) 0;
+}
+
 .project__image {
   height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.project__image img {
+  height: 100%;
+  width: auto;
 }
 
 .project__info {
@@ -297,12 +318,12 @@ td {
 .catalogue h2 {
   font-size: var(--fontSize-L);
   font-weight: bold;
-  margin-bottom: var(--space-S)
+  margin-bottom: var(--space-S);
 }
 
 .catalogue__row {
   display: flex;
-  margin-bottom: var(--space-M)
+  margin-bottom: var(--space-M);
 }
 
 .catalogue__entry {
