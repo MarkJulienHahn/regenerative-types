@@ -172,8 +172,8 @@ export default function Index({
                         url: string;
                         kind: "assemblage";
                         assemblageContent: {
-                          categories: {};
-                          properties: {};
+                          categories: Record<string, string | undefined>;
+                          properties: Record<string, string | undefined>;
                           title: string;
                         };
                       } => img.kind === "assemblage" && !!img.assemblageContent
@@ -219,8 +219,8 @@ export default function Index({
                         url: string;
                         kind: "type";
                         typeContent: {
-                          categories: {};
-                          properties: {};
+                          categories: Record<string, string | undefined>;
+                          properties: Record<string, string | undefined>;
                           title: string;
                         };
                       } => img.kind === "type" && !!img.typeContent

@@ -12,7 +12,7 @@ export type ProjectType = {
     markDefs: Array<{
       _key: string;
       _type: string;
-      [key: string]: any;
+      [key: string]: unknown;
     }>;
     style: string;
   }>;
@@ -20,14 +20,14 @@ export type ProjectType = {
     url: string;
     kind: "type" | "image" | "assemblage";
     typeContent?: {
-      title: string,
-      categories?: Record<string, string | undefined>,
-      properties?: Record<string, string | undefined>
+      title: string;
+      categories?: Record<string, string | undefined>;
+      properties?: Record<string, string | undefined>;
     };
     assemblageContent?: {
-      title: string,
-      categories?: Record<string, string | undefined>,
-      properties?: Record<string, string | undefined>
+      title: string;
+      categories?: Record<string, string | undefined>;
+      properties?: Record<string, string | undefined>;
     };
   }>;
   categories?: Record<string, string | undefined>;
