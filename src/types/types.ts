@@ -32,6 +32,10 @@ export type ProjectType = {
       properties?: Record<string, string | undefined>;
       image?: { asset: { url: string } }
     };
+    imageContent?: {
+      title: string;
+      image?: { asset: { url: string } }
+    };
   }>;
   categories?: Record<string, string | undefined>;
   properties?: Record<string, string | undefined>;

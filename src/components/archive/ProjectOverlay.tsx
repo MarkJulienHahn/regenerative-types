@@ -27,8 +27,6 @@ export default function ProjectOverlay({
       .replace(/^./, (str) => str.toUpperCase());
   }
 
-  console.log(project);
-
   return (
     <div
       className="project__overlayWrapper"
@@ -50,7 +48,7 @@ export default function ProjectOverlay({
                 const imageUrl =
                   img.typeContent?.image?.asset.url ||
                   img.assemblageContent?.image?.asset.url ||
-                  (img as any)?.imageContent?.image?.asset.url;
+                  img.imageContent?.image?.asset.url || ""
 
                 if (!imageUrl) return null;
 
